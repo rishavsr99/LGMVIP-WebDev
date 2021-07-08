@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Single Page Website</title>
+</head>
+
+<body>
+    <div class="menu" id='side-menu'>
+        <b><a href="#">About</a></b><br><br>
+        <b><a href="#">Shop</a></b><br><br>
+        <b><a href="#">Eye Test</a></b><br><br>
+        <b><a href="#">Account</a></b><br><br>
+        <b><a href="#">Notify</a></b><br><br>
+        <div class="sign">
+            <a href="#">SIGN IN</a>
+        </div>
+    </div>
+    <div class="landing">
+        <div class="header">
+            <div class="logo">
+                <h2>FLARE</h2>
+            </div>
+            <div class="bars" id="bar1" onclick="showmenu()">
+                <img src="images/Vector.png">
+            </div>
+            <div class="bars" id="bar2">
+                <img src="images/Vector.png" onclick="hidemenu()">
+            </div>
+        </div>
+        <div class="content">
+            <div class="up-content">
+                <h6>2018 estd.</h6>
+                <div class="line"></div>
+                <h6>Made in India</h6>
+            </div>
+            <div class="mid-content">
+                <h1>Better vision with better fashion.</h1>
+            </div>
+            <div class="down-content">
+                <h4>Flare Cares</h4>
+                <p>Just See the World Better. Every Moment is a
+                    winner. Ultimately superb spectacles. Pride,
+                    Passion and Victory.</p>
+            </div>
+            <div class="start">
+                <a href="#guide">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <div id="guide" class="guide">
+        <div class="heading">
+            <h1>Style Guides</h1>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="images/Cap.png">
+                <div class="explore">
+                    <a href="#">Explore Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Cap 2.png">
+                <div class="explore">
+                    <a href="#">Explore Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Cap 3.png">
+                <div class="explore">
+                    <a href="#">Explore Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thisweek">
+        <div class="heading">
+            <h1>New This Week</h1>
+        </div>
+        <h3>Featuring classic Windsor Rim frames in versatile shapes, our latest summer sunnies reflect the retro vibe
+            in a new light. Soak in the soft glamour and freshness of this season in these trendy designs. Featured
+            Style: 'Brando' Sunglasses.</h3>
+        <div class="details">
+            <div class="dtext">
+                <h2>Retro Reboot</h2>
+                <h1>Windsor Rim Sunnies</h1>
+            </div>
+            <div class="dimg">
+                <img src="images/147421_3.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="guide">
+        <div class="heading">
+            <h1>Great Satisfaction</h1>
+        </div>
+        <div class="groups">
+            <div class="group">
+                <img src="images/idealFit_f622f717-d9bf-49a5-9152-9e683e0f95ec_480x.png">
+                <h2>The Ideal Fit</h2>
+                <p>Our premium eyewear is aligned to suit your needs - be it bespoke no-slip nose pads, adjustable
+                    bridges, or sizes that are fine-tuned until they’re perfect for your face.</p>
+            </div>
+            <div class="group">
+                <img src="images/Customer_2_266ad973-546a-4fc6-a404-143e3029f70a_480x.png">
+                <h2>Master Craftsmanship</h2>
+                <p>Our frames are twice as durable thanks to handcrafted & skin-friendly materials. We constantly
+                    innovate with high-performance & eco-friendly materials, so that you wear the best!</p>
+            </div>
+            <div class="group">
+                <img src="images/Customer_2_1_e943ae25-ebf6-4340-a6cd-eb498adc7691_480x.png">
+                <h2>Superior Lenscape</h2>
+                <p>We’ve got a lens for every need. Our range encompasses innovations like BLU digital, Anti-Fog,
+                    Progressive, Anti-Glare & many more!</p>
+            </div>
+        </div>
+    </div>
+    <div class="recom">
+        <div class="heading">
+            <h1>Our Recommendation</h1>
+            <div class="option">
+                <div class="variety">
+                    <h2>Maywood</h2>
+                    <div class="photo" >
+                        <div id="photo1">
+                            <img src="images/recom/maywood_1.jpg">
+                        </div>
+                        <div id="photo2">
+                            <img src="images/recom/maywood_2.jpg">
+                        </div>
+                        <div id="photo3">
+                            <img src="images/recom/maywood_3.jpg">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div id="but1m" class="butA" onclick="maywood_1()"></div>
+                        <div id="but2m" class="butA" onclick="maywood_2()"></div>
+                        <div id="but3m" class="butA" onclick="maywood_3()"></div>
+                    </div>
+                </div>
+                <div class="variety">
+                    <h2>Beverly</h2>
+                    <div class="photo">
+                        <div id="photox1">
+                            <img src="images/recom/beverly_1.jpg">
+                        </div>
+                        <div id="photox2">
+                            <img src="images/recom/beverly_2.jpg">
+                        </div>
+                        <div id="photox3">
+                            <img src="images/recom/beverly_3.jpg">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div id="but1b" class="butA" onclick="beverly_1()"></div>
+                        <div id="but2b" class="butA" onclick="beverly_2()"></div>
+                        <div id="but3b" class="butA" onclick="beverly_3()"></div>
+                    </div>
+                </div>
+                <div class="variety">
+                    <h2>Brando</h2>
+                    <div class="photo">
+                        <div id="photoy1">
+                            <img src="images/recom/brando_1.jpg">
+                        </div>
+                        <div id="photoy2">
+                            <img src="images/recom/brando_2.jpg">
+                        </div>
+                        <div id="photoy3">
+                            <img src="images/recom/brando_3.jpg">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div id="but1br" class="butA"></div>
+                        <div id="but2br" class="butA"></div>
+                        <div id="but3br" class="butA"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="option">
+                <div class="variety">
+                    <h2>Prado</h2>
+                    <div class="photo">
+                        <div id="photon1">
+                            <img src="images/recom/prado_1.jpg">
+                        </div>
+                        <div id="photon2">
+                            <img src="images/recom/prado_2.jpg">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div id="but1pr" class="butA"></div>
+                        <div id="but2pr" class="butA"></div>
+                    </div>
+                </div>
+                <div class="variety">
+                    <h2>Philler</h2>
+                    <div class="photo">
+                        <div id="photom1">
+                            <img src="images/recom/phil_1.jpg">
+                        </div>
+                        <div id="photom2">
+                            <img src="images/recom/phil_2.jpg">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div id="but1ph" class="butA"></div>
+                        <div id="but2ph" class="butA"></div>
+                    </div>
+                </div>
+                <div class="variety">
+                    <h2>Gilbert</h2>
+                    <div class="photo">
+                        <div id="photoo1">
+                            <img src="images/recom/gilbert_1.jpg">
+                        </div>
+                        <div id="photoo2">
+                            <img src="images/recom/gilbert_2.jpg">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div id="but1g" class="butA"></div>
+                        <div id="but2g" class="butA"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hline"></div>
+        <div class="connect">
+            <div class="heading">
+                <h1>Connect With Us</h1>
+            </div>
+            <div class="flex">
+                <div class="contact">
+                    <h2>CONTACT</h2><BR>
+                    <H4>+91 6204XXXXXX</H4>
+                    <H4>+91 7762XXXXXX</H4>
+                </div>
+                <div class="socials">
+                    <h2>SOCIALS</h2><BR>
+                    <H4>instagram.com/ui_addicted</H4>
+                    <H4>linkedin.com/in/rishav-srivastava-9419b4190</H4>
+                </div>
+                <div class="about">
+                    <h2>ABOUT</h2><br>
+                    <H4>My Profile</H4>
+                    <H4>My Portfolio</H4>
+                </div>
+            </div>
+        </div>
+        <div class="hline"></div>
+        <div class="footer">
+            <p>This Single Page is Created by <a href="linkedin.com/in/rishav-srivastava-9419b4190">Rishav Srivastava</a> as a task of Let's Grow more
+            web development Internship Program.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

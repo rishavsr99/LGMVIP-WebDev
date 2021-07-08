@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Poppins;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.landing{
+    width: 100vw;
+    height:105vh;
+    background-image: url('images/background-image.png');
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.header{
+    width:100vw;
+    height:80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 12px;
+    margin-left: 30px;
+}
+
+.logo{
+    letter-spacing: 0.5rem;
+    font-size: 1.1rem;
+    
+}
+
+.bars{
+    margin-right:120px;
+    margin-top: 12px;
+    z-index:15;
+}
+
+.bars:hover{
+    cursor: pointer;
+}
+
+.menu{
+    position: fixed;
+    margin-left: 77vw;
+    height: 100vh;
+    width: 300px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(55, 57, 92, 0.37);
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding-top:105px;
+    padding-left:80px;
+    z-index: 7;
+    
+}
+
+#side-menu{
+    display: none;
+}
+.menu a{
+    padding-right:100px;
+    padding-bottom:5px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.menu a:hover{
+    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
+}
+.sign{
+    font-weight: 700;
+    margin-top:22vh;
+    letter-spacing: 0.1rem;
+    margin-left: -15px;
+    
+}
+
+.start{
+    font-weight: 700;
+    margin-top:40px;
+}
+
+.sign a{
+    padding:5px 40px;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba(55, 57, 92, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border:1px solid black;
+}
+
+.start a{
+    padding:5px 40px;
+    background: rgba( 255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(55, 57, 92, 0.17);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border:1px solid black;
+    text-decoration: none;
+    color: black
+}
+.sign a:hover{
+    background: rgba( 255, 255, 255, 0.8 );
+    box-shadow: 0 8px 32px 0 rgba(55, 57, 92, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border:1px solid black;
+}
+
+.start a:hover{
+    background: rgba( 255, 255, 255, 0.8 );
+    box-shadow: 0 8px 32px 0 rgba(55, 57, 92, 0.77);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border:1px solid black;
+}
+.content{
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+.up-content{
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.line{
+    width: 30px;
+    height:1px;
+    background: black;
+    margin:8px 10px;
+}
+
+.mid-content{
+    width:420px;
+    margin:2px 0px 15px 0;
+    letter-spacing: 0.2rem;
+}
+
+.mid-content h1{
+    font-size: 3.5rem;
+}
+
+.down-content{
+    width:400px;
+}
+.down-content h4{
+    margin-bottom:8px;
+}
+
+.down-content p{
+    font-size: 14px;
+}
+
+.guide{
+    width:100vw;
+    height:105vh;
+    background: #000000;
+    padding-top:40px;
+    color: #f8f8f8;
+}
+    
+
+.heading{
+    
+    text-align: center;
+}
+
+.heading h1{
+    font-size: 2.2rem;
+    padding-bottom:50px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card{
+    width:300px;
+    height:380px;
+    background: rgba(34, 34, 34, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(18, 19, 31, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 1);
+    padding-top: 3px;
+}
+
+.card img{
+    width:100%;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    border: 2px solid white;
+}
+
+.explore{
+    font-weight: 700;
+    margin-left: 106px;
+    margin-top: -8px;
+}
+
+
+.explore a{
+    padding:5px 40px;
+    background: rgba( 255, 255, 255, 0.95);
+    box-shadow: 0 8px 32px 0 rgba(55, 57, 92, 0.17);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border:1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    color:black;
+}
+
+.explore a:hover{
+    background: rgba( 255, 255, 255, 0.1);
+    border:1.3px solid white;
+    color:white;
+}
+
+.thisweek{
+    width:100vw;
+    height:105vh;
+    background: #fff;
+    padding-top:40px;
+    color:black;
+}
+
+.thisweek h3{
+    width:90vw;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.details{
+    display: flex;
+    width:90vw;
+    margin:30px auto;
+
+}
+
+.details .dtext{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:140px;
+}
+
+.details .dtext h2{
+    color:rgb(175, 68, 49);
+}
+
+.details .dtext h1{
+    color: rgb(119, 3, 3);
+}
+.details .dimg{
+    width:60%;
+}
+
+.dimg img{
+    width:100%;
+}
+
+.groups{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.group{
+    width:320px;
+    height:380px;
+    text-align: center;
+}
+
+.group img{
+    width: 70%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.group h2{
+    margin-bottom: 10px;
+}
+
+.group p{
+    text-align: center;
+    font-size: 0.9rem;
+    color: #b9b9b9;
+}
+
+.recom{
+    width:100vw;
+    height:115vh;
+    background: #fff;
+    padding-top:40px;
+    padding-bottom: 40px;
+
+}
+
+
+.variety{
+    padding-bottom: 40px;
+}
+.variety h2{
+    font-size: 16px;
+    color:#4e4e4e;
+    cursor: pointer;
+}
+.photo img{
+    width:80%;
+    cursor: pointer;
+}
+
+#photo2{
+    display: none;
+}
+
+#photo3{
+    display: none;
+}
+
+
+#photox2{
+    display: none;
+}
+
+#photox3{
+    display: none;
+}
+
+
+#photoy2{
+    display: none;
+}
+
+#photoy3{
+    display: none;
+}
+
+#photom2{
+    display: none;
+}
+
+#photon2{
+    display: none;
+}
+
+#photoo2{
+    display: none;
+}
+.option{
+    display: flex;
+}
+
+.button{
+    display: flex;
+    width:100px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.butA{
+    width:12px;
+    border-radius: 50%;
+    height:12px;
+    background: #4e4e4e;
+}
+
+.butA:hover{
+    transform: scale(1.5);
+}
+#but1m{
+    background: rgba(77, 2, 112, 0.726);
+    cursor: pointer;
+}
+
+#but2m{
+    background: rgb(240, 152, 36);
+    cursor: pointer;
+}
+
+#but3m{
+    background: rgb(61, 117, 219);
+    cursor: pointer;
+}
+
+#but1b{
+    background: rgba(212, 34, 72, 0.692);
+    cursor: pointer;
+}
+
+#but2b{
+    background: rgba(65, 18, 153, 0.685);
+    cursor: pointer;
+}
+
+#but3b{
+    background: rgb(139, 174, 228);
+    cursor: pointer;
+}
+
+#but1br{
+    background: rgba(36, 61, 131, 0.781);
+    cursor: pointer;
+}
+
+#but2br{
+    background: rgba(230, 137, 50, 0.829);
+    cursor: pointer;
+}
+
+#but3br{
+    background: rgb(245, 159, 173);
+    cursor: pointer;
+}
+
+#but1pr{
+    background: rgb(128, 118, 66);
+    cursor: pointer;
+}
+
+#but2pr{
+    background: #212121;
+    cursor: pointer;
+}
+
+#but1ph{
+    background: rgba(27, 49, 109, 0.781);
+    cursor: pointer;
+}
+
+#but2ph{
+    background: rgb(36, 36, 36);
+    cursor: pointer;
+}
+
+#but1g{
+    background: rgba(167, 144, 13, 0.61);
+    cursor: pointer;
+}
+
+#but2g{
+    background: #212121;
+    cursor: pointer;
+}
+
+.hline{
+
+    width:90vw;
+    background: black;
+    height:1.4px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.connect{
+    background: white;
+    width:90vw;
+    margin: 0 auto;
+}
+
+.flex{
+    width:95%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about{
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.about h4{
+    color:rgb(97, 97, 97);
+    cursor: pointer;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact h4{
+    color:rgb(97, 97, 97);
+    cursor: pointer;
+}
+
+.socials{
+    text-align: center;
+}
+
+.socials h4{
+    color:rgb(97, 97, 97);
+    cursor: pointer;
+}
+
+.footer{
+    height:200px;
+    width:100vw;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    color:white;
+}
+
+.footer a{
+    color: red;
+}
+
+#bar2{
+    display: none;
+}
